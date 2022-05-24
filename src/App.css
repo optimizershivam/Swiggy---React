@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 80px;
+  padding: 20px;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  position: relative;
+  max-width: 1200px;
+  min-width: 1200px;
+  display: flex;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.location {
+  display: flex;
+}
+
+.city {
+  color: #3d4152;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
+}
+
+.city::after {
+  content: "";
+  height: 2px;
+  top: 5px;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  background: #3d4152;
+}
+
+.state {
+  padding-left: 10px;
+}
+
+.navbar-options {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 60px;
+  color: #3d4152;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.offers {
+  margin-top: 80px;
+  background-color: #171a29;
   color: white;
+  height: 340px;
+  overflow-x: scroll;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.offer {
+  padding: 20px;
+  margin-right: 50px;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  transition: transform 0.2s;
+  padding: 35px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.offer:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.near-you {
+  margin: 60px 30px;
+}
+
+.restaurants {
+  padding-left: 40px;
+}
+
+.restaurants h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.restaurant-options {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  align-items: center;
+}
+
+.restaurant-option {
+  align-items: center;
+  cursor: pointer;
+  margin-right: 60px;
+  color: #3d4152;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.divider {
+  border-top: 1px solid #e9e9eb;
+  height: 1px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  flex: 33%;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 85px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 254px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px 0 rgb(48 56 97 / 20%);
+  border: 0.2px solid rgb(211, 207, 207);
+}
+
+.restaurant-details {
+  margin-top: 14px;
+  line-height: normal;
+}
+
+.restaurant-title {
+  font-size: 17px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.restaurant-subtitle {
+  color: #686b78;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.restaurant-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.restaurant-ratings {
+  display: flex;
+  align-items: center;
+  padding: 2px 5px 2px 0;
+  color: white;
+  font-weight: 500;
+  margin-top: 4px;
+  background-color: #48c479;
+}
+
+.star-icon {
+  transform: scale(0.7);
+}
+
+.restaurant-delivery-timings {
+  color: #686b78;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.restaurant-cost-for-two {
+  color: #686b78;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.offer-banner {
+  border-top: 1px solid #e9e9eb;
+  padding-top: 14px;
+  margin-top: 14px;
+  color: #8a584b;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.offer-text {
+  padding-left: 10px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.underline:hover {
+text-decoration: 2px underline;
 }

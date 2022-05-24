@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+      "image": "assets/restaurant1.jpeg",
+      "name": "Chaitanya Parathas",
+      "category": [
+        "North India",
+        "Punjabi",
+        "Chinese",
+        "Thalis Combo",
+        "Beverages"
+      ],
+      "rating": 1,
+      "deliveryTimings": 33,
+      "costForTwo": 300,
+      "offer": ["20% off", "Use TRYNEW"]
+    },
+    {
+        "id": 2,
+        "image": "assets/restaurant2.jpeg",
+        "name": "MH 12 Pav Bhaji",
+        "category": [
+          "Snacks",
+          "Pizza",
+          "Beverages",
+          "Steet Food"
+        ],
+        "rating": 3,
+        "deliveryTimings": 25,
+        "costForTwo": 100,
+        "offer": ["10% off", "Use TRYNEW"]
+      },
+      {
+          "id": 3,
+        "image": "assets/restaurant3.jpeg",
+        "name": "Lunch Box",
+        "category": [
+          "North India",
+          "Punjabi",
+          "Combo",
+          "Biryani",
+          "Healthy Food"
+        ],
+        "rating": 2,
+        "deliveryTimings": 31,
+        "costForTwo": 250,
+        "offer": ["20% off", "Use TRYNEW"]
+      },
+      {
+          "id": 4,
+        "image": "assets/restaurant4.jpeg",
+        "name": "The Hungry Hippe",
+        "category": [
+          "Chinese",
+          "Italian",
+          "Thai"
+        ],
+        "rating": 3.5,
+        "deliveryTimings": 38,
+        "costForTwo": 500,
+        "offer": ["40% off", "Use TRYNEW"]
+      },
+      {
+          "id": 5,
+        "image": "assets/restaurant5.jpeg",
+        "name": "Ovenstory Pizzas",
+        "category": [
+          "Pizzas"
+        ],
+        "rating": 4,
+        "deliveryTimings": 45,
+        "costForTwo": 600,
+        "offer": ["50% off", "Use TRYNEW"]
+      },
+      {
+          "id": 6,
+        "image": "assets/restaurant6.jpeg",
+        "name": "Starbucks Coffee",
+        "category": [
+          "Beverages",
+          "Ice Cream"
+        ],
+        "rating": 4.3,
+        "deliveryTimings": 38,
+        "costForTwo": 400,
+        "offer": ["40% off", "Use TRYNEW"]
+    }
+  ]
+
+
