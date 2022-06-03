@@ -26,13 +26,13 @@ function App() {
         switch(newFilter) {
               case "1" : {
                 setfilterby(1);
-                data.sort((a, b) => b.costForTwo - a.costForTwo );
+                data.sort((a, b) => +b.costForTwo.replace(/(\₹|" "|FOR TWO)/g, "") - +a.costForTwo.replace(/(\₹|" "|FOR TWO)/g, "") );
                 setdata([...data]);
                 break;
               }
               case "2" : {
                 setfilterby(2);
-                data.sort((a, b) => a.costForTwo - b.costForTwo );
+                data.sort((a, b) => +a.costForTwo.replace(/(\₹|" "|FOR TWO)/g, "") - +b.costForTwo.replace(/(\₹|" "|FOR TWO)/g, "") );
                 setdata([...data]);
                 break;
               }
@@ -44,7 +44,7 @@ function App() {
               } 
               case "4" : {
                 setfilterby(4);
-                data.sort((a, b) => b.deliveryTimings - a.deliveryTimings );
+                data.sort((a, b) => +b.deliveryTimings.replace(/(\MINS|" ")/g, "") - +a.deliveryTimings.replace(/(\MINS|" ")/g, "") );
                 setdata([...data]);
                 break;
               }default : {
